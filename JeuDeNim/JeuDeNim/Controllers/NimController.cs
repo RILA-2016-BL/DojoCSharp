@@ -14,7 +14,7 @@ namespace JeuDeNim.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult ConfigPartie(JeuViewModels model)
+        public ActionResult ConfigPartie(ConfigModels model)
         {
             if (ModelState.IsValid)
             {
@@ -28,9 +28,31 @@ namespace JeuDeNim.Controllers
             }
         }
 
-        public ActionResult Jeu(JeuViewModels model)
+        public ActionResult Jeu(ConfigModels model)
         {
-            return View(model);
+            int nbLigne = model.NbLignes;
+            int nbSabre = 1;
+           
+            JeuModels jeuModels = new JeuModels();
+            jeuModels.ligneDeSabre = new Dictionary<int,List<int>>();
+
+            jeuModels.ligneDeSabre.Add(0, new List<int>() { 1 });
+            
+            for (int i = 1; i < nbLigne; i++)
+            {
+                List<int> mylist = new List<int>();
+                nbSabre = nbSabre + 2;
+
+                for (int j = 0; j < nbSabre; j++)
+                {
+                    mylist.Add(1);
+                }
+                jeuModels.ligneDeSabre.Add(i, mylist);
+            }
+               
+            
+
+            return View(jeuModels);
         }
 
         public ActionResult FinDePartie()

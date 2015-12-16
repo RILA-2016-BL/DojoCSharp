@@ -1,8 +1,27 @@
 ﻿@using JeuDeNim.Models
-@model JeuViewModels
+@model JeuModels
 @{
     ViewBag.Title = "Jeu";
 }
 
 <h2>Jeu</h2>
+<script>
+    function OnImgClick(){
+        var img = document.getElementById("img");
+        print("im in");
+    }
+    
+        
+</script>
+@for (int i = 0; i < Model.ligneDeSabre.Count; i++)
+{
+    <div id ="imgDiv" style="margin-left:50px">
+        @for (int j = 0; j < Model.ligneDeSabre[i].Count; j++)
+        {
 
+        <span><img src="~/Content/Img/sabre.png" id="img" onclick="OnImgClick()"/></span>
+
+        }
+    </div>
+    <hr />
+}

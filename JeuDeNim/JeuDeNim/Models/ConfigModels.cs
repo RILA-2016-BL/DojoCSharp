@@ -6,7 +6,7 @@ using System.Web;
 
 namespace JeuDeNim.Models
 {
-    public class JeuViewModels
+    public class ConfigModels
     {
 
         [Required]
