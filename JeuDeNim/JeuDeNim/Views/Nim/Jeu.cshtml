@@ -6,22 +6,46 @@
 
 <h2>Jeu</h2>
 <script>
-    function OnImgClick(){
-        var img = document.getElementById("img");
-        print("im in");
-    }
-    
-        
+    $(document).ready(function () {
+
+        var selectedElements = 0;
+        var ligneSelectionnee = undefined;
+
+        $(".imgDiv").click(function () {
+
+            if (ligneSelectionnee === undefined || ligneSelectionnee === $(this).data('ligne'))
+            {
+                if (!$(this).data('isClicked')) {
+                    $(this).css('border', '3px solid red');
+                    $(this).data('isClicked', true);
+                    selectedElements++;
+                    ligneSelectionnee = $(this).data('ligne');
+                } else {
+                    $(this).css('border', 'none');
+                    $(this).data('isClicked', false);
+                    selectedElements--;
+                    if (selectedElements == 0) {
+                        ligneSelectionnee = undefined;
+                    }
+                }
+            }
+
+        });
+
+        $("input").click(function () {
+            alert(selectedElements)
+        })
+
+    });
 </script>
 @for (int i = 0; i < Model.ligneDeSabre.Count; i++)
 {
-    <div id ="imgDiv" style="margin-left:50px">
+    <div  style="margin-left:50px">
         @for (int j = 0; j < Model.ligneDeSabre[i].Count; j++)
         {
-
-        <span><img src="~/Content/Img/sabre.png" id="img" onclick="OnImgClick()"/></span>
-
+            <span><img class="imgDiv" data-ligne="@i" src="~/Content/Img/sabre.png"/></span>
         }
     </div>
     <hr />
 }
+<input type="button" value="TestBtn"/>
