@@ -1,0 +1,14 @@
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\bin\Debug\maevaCalc.exe.config
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\bin\Debug\maevaCalc.exe
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\bin\Debug\maevaCalc.pdb
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.csprojResolveAssemblyReference.cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\MainWindow.g.cs
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\App.g.cs
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc_MarkupCompile.cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc_MarkupCompile.lref
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\MainWindow.baml
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.g.resources
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.Properties.Resources.resources
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.csproj.GenerateResource.Cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.exe
+c:\users\florian.duport\documents\visual studio 2015\Projects\maevaCalc\maevaCalc\obj\Debug\maevaCalc.pdb

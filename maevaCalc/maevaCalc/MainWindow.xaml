@@ -1,0 +1,36 @@
+﻿<Window x:Class="maevaCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:maevaCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="525">
+    <Grid>
+        <Button x:Name="bt_0" Content="0" HorizontalAlignment="Left" Margin="125,562,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_3" Content="3" HorizontalAlignment="Left" Margin="250,469,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_4" Content="4" HorizontalAlignment="Left" Margin="10,371,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_5" Content="5" HorizontalAlignment="Left" Margin="130,371,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_6" Content="6" HorizontalAlignment="Left" Margin="245,371,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_9" Content="9" HorizontalAlignment="Left" Margin="245,273,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_8" Content="8" HorizontalAlignment="Left" Margin="125,273,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_7" Content="7" HorizontalAlignment="Left" Margin="15,278,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_2" Content="2" HorizontalAlignment="Left" Margin="135,469,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_1" Content="1" HorizontalAlignment="Left" Margin="10,469,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="ChiffreClick"/>
+        <Button x:Name="bt_egal" Content="=" HorizontalAlignment="Left" Margin="245,562,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="bt_egal_Click"/>
+
+        <Button x:Name="bt_multiplication" Content="*" HorizontalAlignment="Left" Margin="392,175,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="bt_multiplication_Click" />
+        <Button x:Name="bt_moins" Content="-" HorizontalAlignment="Left" Margin="392,371,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387"/>
+
+        <Button x:Name="bt_retour" Content="&lt;-" HorizontalAlignment="Left" Margin="15,175,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387"/>
+        <Button x:Name="bt_point" Content="." HorizontalAlignment="Left" Margin="125,175,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387"/>
+        <Button x:Name="bt_C" Content="C" HorizontalAlignment="Left" Margin="240,175,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387"/>
+        <Button x:Name="bt_division" Content="/" HorizontalAlignment="Left" Margin="392,273,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387"/>
+        <TextBox x:Name="tb_Affichage" HorizontalAlignment="Left" Height="122" Margin="49,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" IsEnabled="False"/>
+
+        <Button x:Name="bt_plus_Copy" Content="+" Margin="392,469,10,0" VerticalAlignment="Top" Height="93" RenderTransformOrigin="0.462,1.387" Click="bt_plus_Copy_Click" />
+        <Button x:Name="bt_moins_Copy" Content="-" HorizontalAlignment="Left" Margin="392,371,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="bt_moins_Copy_Click"/>
+        <Button x:Name="bt_division_Copy" Content="/" HorizontalAlignment="Left" Margin="392,273,0,0" VerticalAlignment="Top" Width="115" Height="93" RenderTransformOrigin="0.462,1.387" Click="bt_division_Copy_Click"/>
+
+    </Grid>
+</Window>

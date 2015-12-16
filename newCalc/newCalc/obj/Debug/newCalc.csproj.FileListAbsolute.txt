@@ -1,0 +1,14 @@
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\bin\Debug\newCalc.exe.config
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\bin\Debug\newCalc.exe
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\bin\Debug\newCalc.pdb
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.csprojResolveAssemblyReference.cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\MainWindow.g.cs
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\App.g.cs
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc_MarkupCompile.cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc_MarkupCompile.lref
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\MainWindow.baml
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.g.resources
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.Properties.Resources.resources
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.csproj.GenerateResource.Cache
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.exe
+c:\users\florian.duport\documents\visual studio 2015\Projects\newCalc\newCalc\obj\Debug\newCalc.pdb
