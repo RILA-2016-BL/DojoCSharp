@@ -1,0 +1,93 @@
+﻿@using marienbad.Models
+@model JeuModels
+@{
+    ViewBag.Title = "Jeu";
+}
+
+
+<div  class="container">
+    <div class="jumbotron">
+        <div class="alert alert-success">
+            <strong>@Model.Nickname</strong>,
+            celui qui prend le(s) dernier(s) jeton(s) de la dernière ligne gagne la partie.
+        </div>
+        <div id="wrap" class="text-center">
+            @Html.Partial("Pyramide", Model)
+        </div>
+        <div class="text-center">
+             <a class="btn @(Model.Checked ? "btn-primary" : "btn-danger")" onclick="send(this)"> @(Model.Checked ? "A moi de jouer" : "Faire jouer l'ordi")</a>
+        </div>
+        
+    </div>
+
+    <div id="myModal" class="modal fade bs-example-modal-xs text-center" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-xs">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<script>
+    function toggleMe(that) {
+        if ($(that).hasClass('btn-danger')) {
+            $(that).removeClass('btn-danger');
+            myModel.Count--;
+            if (myModel.Count == 0) {
+                myModel.Row = -1;
+            }
+        } else if ((myModel.Row === -1) || (myModel.Row === $(that).data('row'))) {
+            $(that).addClass(' btn-danger ');
+            myModel.Count++;
+            myModel.Row = $(that).data('row');
+        }
+    }
+    function send(that) {
+        if ($(that).hasClass('btn-danger')) {
+            $('#myModal').modal('show');
+            $.ajax({
+                url: "/Nim/Computer",
+                type: "POST",
+                data: myModel,
+                success: function (data, textStatus, jqXHR) {
+                    setTimeout(function () {
+                        $('#wrap').html(data);
+                        myModel.Row = -1;
+                        myModel.Count = 0;
+                        $(that).addClass("btn-primary").removeClass("btn-danger").text("A moi de jouer");
+                        $('#myModal').modal('hide');
+                    }, 1000);
+                    
+                },
+                error: function (jqXHR, textStatus, errorThrown) {
+                    $('#myModal').modal('hide');
+                    alert(errorThrown);
+                }
+            });
+        } else {
+            if (myModel.Row != -1) {
+                $.ajax({
+                    url: "/Nim/Human",
+                    type: "POST",
+                    data: myModel,
+                    success: function (data, textStatus, jqXHR) {
+                        $('#wrap').html(data);
+                        myModel.Row = -1;
+                        myModel.Count = 0;
+                        $(that).addClass("btn-danger").removeClass("btn-primary").text("Faire jouer l'ordi");
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        alert(errorThrown);
+                    }
+                });
+            } else {
+                alert("Selectionnez au moins un élément.");
+            }
+            
+        }
+        
+    }
+</script>
